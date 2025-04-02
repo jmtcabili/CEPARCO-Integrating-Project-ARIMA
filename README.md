@@ -9,9 +9,6 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 
 ### Differencing
 <b>First 10 Output Elements:</b><br/>
-- Excel Output: <br/>
-  <img width="200" alt="image" src="https://github.com/user-attachments/assets/c422dbe1-6cdf-4a31-b578-999711a1a71b" />
-
 
 - Python Output (Sequential): <br/>
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/4c4b0989-25f8-47c7-b782-b9d5d7e431d1" />
