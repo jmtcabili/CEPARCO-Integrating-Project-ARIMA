@@ -40,7 +40,9 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 - Excel Output (LINTEST Result): <br/>
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/d7641138-1082-470a-a13b-2d4700021f93" />
 
-- Python Output (Sequential):
+- Python Output (Sequential): <br/>
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/93f9ccf0-4bd9-4033-83f4-a5cb2261295d" />
+
 - CUDA Output (Parallel): <br/>
   <img width="282" alt="image" src="https://github.com/user-attachments/assets/ab63c87c-6d19-4f92-9696-d729a7184cb6" />
 
