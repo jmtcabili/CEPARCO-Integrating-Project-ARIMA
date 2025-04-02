@@ -16,7 +16,9 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 - Excel Output (LINTEST Result): <br/>
   <img width="216" alt="image" src="https://github.com/user-attachments/assets/de2dcb6d-13ee-454c-b925-3757a79484be" />
 
-- Python Output (Sequential):
+- Python Output (Sequential): <br/>
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/c097fc1f-5e43-417c-bcfa-9f143140b93c" />
+  
 - CUDA Output (Parallel): <br/>
   <img width="336" alt="image" src="https://github.com/user-attachments/assets/c556122d-65f5-4994-b0fe-011d822c9340" />
 
@@ -25,7 +27,7 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
   <img width="287" alt="image" src="https://github.com/user-attachments/assets/ad12bb6d-fff1-46ca-af47-2cc4a73a96ee" />
 
 - Python Output (Sequential): <br/>
-  <img width="287" alt="image" src="https://github.com/user-attachments/assets/23aa3c4b-d070-4ce5-bbe8-69568b695bdb" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/23aa3c4b-d070-4ce5-bbe8-69568b695bdb" />
 
 
 - CUDA Output (Parallel): <br/>
