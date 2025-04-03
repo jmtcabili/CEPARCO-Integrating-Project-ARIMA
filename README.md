@@ -16,7 +16,6 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 - CUDA Output (Parallel): <br/>
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/36199c0a-4968-4d4e-9ff0-594bc41a0a0a" />
 
----
 ### Autoregressive Coefficients 
 - Finding the Autoregressive Coefficients of the ARIMA Model through Ordinary Least Squares (OLE) 
 
@@ -67,12 +66,32 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 ### Moving Average Coefficients 
 ### Prediction
 
+---
 ## Discussion of parallel algorithms
 ### Differencing
 ### Autoregressive Coefficients 
 ### Moving Average Coefficients 
 ### Prediction
 
-
+---
 ## Execution time comparison
-- sequential and parallel columns for different array sizes
+### Differencing
+### Autoregressive Coefficients 
+- Sequential
+    
+- Parallel <br/>
+
+  | Operation   | n = 10 | n = 100 | n = 1 << 10 | n = 1 << 20 |
+  |------------|--------|---------|-------------|-------------|
+  | matmulNaive | 0.12537 | 0.07046 | 0.20166 | 2112.91 |
+  | lagged     | 0.06128 | 0.1558  | 0.05379  | 60.78  |
+  | inverse    | 0.09446 | 0.05926 | 0.05881  | 0.02734 |
+  | transpose  | 0.03424 | 0.07059 | 0.00384  | 0.2993  |
+  | **Total**  | **0.32** | **0.36** | **0.32** | **2174.02** |
+### Moving Average Coefficients 
+### Prediction
+
+
+
+
+
