@@ -73,7 +73,9 @@ From a simple sequential differencing loop, where the difference between consecu
 ### Autoregressive Coefficients 
 
 According to [1], the coefficients to an Autoregressive Model can be estimated via ordinary least squares. The derived solution can be expressed as: 
+
 ![image](https://github.com/user-attachments/assets/2430180d-3d45-4908-8eff-af960153e18f)
+
 where φ is a (p+1) x 1 matrix which contains the coefficients of the autogressive model. As seen in the figure above, the solution involves multiple matrix operations such as transposition, inversion, and multiplication which CUDA should be able to handle well through proper thread, block, and grid allocation for parallel execution of operations. 
 
 ### Moving Average Coefficients 
