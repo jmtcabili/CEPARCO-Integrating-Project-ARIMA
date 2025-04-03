@@ -15,7 +15,8 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/36199c0a-4968-4d4e-9ff0-594bc41a0a0a" />
 
 ### Autoregressive Coefficients 
-- Finding the Autoregressive Coefficients of the ARIMA Model through Ordinary Least Squares (OLE) 
+- Finding the Autoregressive Coefficients of the ARIMA Model through Ordinary Least Squares (OLE)
+- As seen in the different cases below, the  
 
 *Case 1: p=1* 
 - Excel Output (LINTEST Result): <br/>
