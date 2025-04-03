@@ -116,9 +116,9 @@ Calculation of coefficients of the autoregressive model at p = 4 with different 
 
   | Operation          | n = 10 | n = 100 | n = 1<<10 | n = 1<<20 | n = 1<<26 |
   |--------------------|--------|---------|-----------|-----------|-----------|
-  | lagged            | 0.12   | 0.13    | 0.08      | 46.19     | 2246.49   |
-  | mul, inv, trans   | 0.36   | 0.38    | 0.176     | 52.26     | 3283.11   |
-  | **Total**         | 0.48   | 0.51    | 0.26      | 98.45     | 5529.60    |
+  | lagged            | 0.018   | 0.12    | 0.029     | 46.19     | 2246.49   |
+  | mul, inv, trans   | 0.039   | 0.028   | 0.176     | 55.70     | 3283.11   |
+  | **Total**         | 0.057   | 0.04    | 0.205     | 101.89    | 5529.60    |
 
 - Parallel <br/>
 
@@ -135,7 +135,7 @@ Calculation of coefficients of the autoregressive model at p = 4 with different 
 
   |          | n = 10 | n = 100 | n = 1<<10 | n = 1<<20 | n = 1<<26 |
   |----------|--------|---------|-----------|-----------|-----------|
-  | speedup  | 1.12   | 1.65    | 0.54      | 0.86      | 1.41      |
+  | speedup  | 0.12   | 0.13    | 0.43      | 0.89      | 1.41      |
 
   As seen in the tables above, parallelizing the Autoregressive coefficients computation can offer speedups in of up to 1.41 as the input dataset increases in magnitude. These speedups were achieved by parallelizing the matrix operations involved in computing the coefficients along with making use of memory management techniques in cuda such as memory advising and prefetching. However, the implementation failed to account for all penalties as there were still a few page faults that surfaced during the execution of some of the trials. 
 
