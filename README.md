@@ -1,4 +1,6 @@
-# CEPARCO-Integrating-Project-ARIMA
+# CEPARCO-Integrating-Project-ARIMA<br/>
+
+Video Link: https://drive.google.com/file/d/1k_ROdRdcEJVyEAHaBX1JD_p-4cUJKM2W/view?usp=sharing
 
 ## Screenshot of execution
 
