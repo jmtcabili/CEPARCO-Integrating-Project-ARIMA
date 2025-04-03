@@ -104,6 +104,7 @@ where φ is a (p+1) x 1 matrix which contains the coefficients of the autogressi
 
 
 ### Autoregressive Coefficients 
+### Autoregressive Coefficients 
 Calculation of coefficients of the autoregressive model at p = 4 with different input sizes.
 
 - Sequential<br>
@@ -122,13 +123,16 @@ Calculation of coefficients of the autoregressive model at p = 4 with different 
   | lagged        | 0.09   | 0.1     | 0.05      | 0.36      | 22.89     |
   | inverse       | 0.11   | 0.059   | 0.2       | 0.059     | 0.026     |
   | transpose     | 0.06   | 0.065   | 0.03      | 0.53      | 33.59     |
-  | **Total**     | 0.42   | 0.30    | 0.45      | 113.83    | 3913.38   |
+  | transfer      | 0.01   | 0.01    | 0.03      | 0.34      | 22.25     |
+  | **Total**     | 0.43   | 0.31    | 0.48      | 114.17    | 3935.63   |
 
 - Speedup
 
   |          | n = 10 | n = 100 | n = 1<<10 | n = 1<<20 | n = 1<<26 |
   |----------|--------|---------|-----------|-----------|-----------|
-  | speedup  | 1.14   | 1.70    | 0.57      | 0.86      | 1.41      |
+  | speedup  | 1.12   | 1.65    | 0.54      | 0.86      | 1.41      |
+
+  As seen in the tables above, parallelizing the Autoregressive coefficients computation can offer speedups in of up to 1.41 as the input dataset increases in magnitude. These speedups were achieved by parallelizing the matrix operations involved in computing the coefficients along with making use of memory management techniques in cuda such as memory advising and prefetching. However, the implementation failed to account for all penalties as there were still a few page faults that surfaced during the execution of some of the trials. 
 
 
 ### Moving Average Coefficients 
