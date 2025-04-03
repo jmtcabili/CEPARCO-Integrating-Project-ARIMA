@@ -140,10 +140,6 @@ Calculation of coefficients of the autoregressive model at p = 4 with different 
   As seen in the tables above, parallelizing the Autoregressive coefficients computation can offer speedups in of up to 1.41 as the input dataset increases in magnitude. These speedups were achieved by parallelizing the matrix operations involved in computing the coefficients along with making use of memory management techniques in cuda such as memory advising and prefetching. However, the implementation failed to account for all penalties as there were still a few page faults that surfaced during the execution of some of the trials. 
 
 
-### Moving Average Coefficients 
-### Prediction
-
-
 ## References
 [1]C. Zaiontz, “Finding AR(p) coefficients using Regression,” Real-statistics.com, 2025. https://real-statistics.com/time-series-analysis/autoregressive-processes/finding-ar-coefficients-using-regression/ (accessed Apr. 03, 2025).
 
