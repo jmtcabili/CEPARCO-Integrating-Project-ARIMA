@@ -78,6 +78,13 @@ According to [1], the coefficients to an Autoregressive Model can be estimated v
 where φ is a (p+1) x 1 matrix which contains the coefficients of the autogressive model. As seen in the figure above, the solution involves multiple matrix operations such as transposition, inversion, and multiplication which CUDA should be able to handle well through proper thread, block, and grid allocation for parallel execution of operations. 
 
 ### Moving Average Coefficients 
+The process of implementing Moving Average Coefficients combines the calculation of ordinary least squares and and residuals calculations looped over 5 to 10 times to get the moving average coefficients. 
+
+In combination with the ordinary least squares following processes are parallelized: 
+1. Getting Total Sums for Average 
+2. Calculating Rate
+3. Calculating first residuals
+4. Calculating succeeding residuals 
 ### Prediction
 
 ---
