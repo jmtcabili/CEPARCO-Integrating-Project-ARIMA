@@ -1,9 +1,6 @@
 # CEPARCO-Integrating-Project-ARIMA
 
 ## Screenshot of execution
-Include screenshots for excel, python, and CUDA. For differencing, no need excel
-- include results only, focus on time comparisons later
-- focus on correct answers across executions (excel, python, cuda)
 
 The dataset used for verifying execution was obtained from: https://www.kaggle.com/code/prashant111/arima-model-for-time-series-forecasting/notebook 
 
