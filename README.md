@@ -69,6 +69,7 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 ---
 ## Discussion of parallel algorithms
 ### Differencing
+From a simple sequential differencing loop, where the difference between consecutive elements is computed one by one in Python, the program was converted into a parallel algorithm using CUDA. In the CUDA version, a kernel is launched that assigns many GPU threads to perform the differencing operation concurrently. By taking advantage of the Single Instruction, Multiple Thread architecture of CUDA, each thread computes the difference for a specific array element, determined by its unique block and thread indices, and uses a stride to cover multiple elements if necessary. This approach, combined with unified memory management and prefetching, efficiently distributes the workload across thousands of threads on the GPU, significantly accelerating the computation compared to the sequential CPU-based implementation.
 ### Autoregressive Coefficients 
 
 According to [1], the coefficients to an Autoregressive Model can be estimated via ordinary least squares. The derived solution can be expressed as: 
