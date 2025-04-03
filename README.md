@@ -9,6 +9,7 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 
 ### Differencing
 <b>First 10 Output Elements:</b><br/>
+  The first 10 elements of the differencing function is displayed. The python output only uses basic function like for loops to obtain the the difference. The CUDA output uses a basic for loop as well with the addition of spreading the workload to multiple threads for faster completion. The two images below showcase that both methods of calculating for the difference arrive at the same desired output.
 
 - Python Output (Sequential): <br/>
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/4c4b0989-25f8-47c7-b782-b9d5d7e431d1" />
