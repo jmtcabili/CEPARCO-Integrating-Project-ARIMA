@@ -91,8 +91,7 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 - Speedup of Parallel compared to Sequential <br/>
 | Operation   | n = 10 | n = 100 | n = 1 << 10 | n = 1 << 20 |
   |------------|--------|---------|-------------|-------------|
-  | Speedup | 0.2350 | 49.4022 | 1.1513 | 2834.5295 |
-  | **Total**  | **0.2350** | **49.4022** | **1.1513** | **2834.5295** |
+  | **Speedup**  | **0.2350** | **49.4022** | **1.1513** | **2834.5295** |
 
 
 ### Autoregressive Coefficients 
