@@ -76,6 +76,11 @@ The dataset used for verifying execution was obtained from: https://www.kaggle.c
 ---
 ## Execution time comparison
 ### Differencing <br/>
+- Sequential (in mS) <br/>
+| Operation   | n = 10 | n = 100 | n = 1 << 10 | n = 1 << 20 |
+  |------------|--------|---------|-------------|-------------|
+  | differencing | 0.0392 | 0.328118 | 3.81056 | 3263.39383 |
+  | **Total**  | **0.0392** | **0.328118** | **3.81056** | **3263.39383** |
 
 - Parallel (in mS) <br/>
 | Operation   | n = 10 | n = 100 | n = 1 << 10 | n = 1 << 20 |
